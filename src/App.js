@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Textarea from './Textarea/Textarea';
+import Preview from './Preview/Preview';
+import Converter from './Converter';
+import text from './text';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import './fontello/css/fontello.css';
+
+class App extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = { 
+      text: text,
+      html: {}
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ html: Converter.start(this.state.text) });
+  }
+
+  handleChange (value) {
+    this.setState({ text: value,
+                    html: Converter.start(value) });
+
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Textarea text={this.state.text} handleChange={this.handleChange} />
+        <Preview html={this.state.html} />
+      </div>
+    );
+  }
+
 }
 
 export default App;

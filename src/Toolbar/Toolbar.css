@@ -1,0 +1,12 @@
+.toolbar {
+  background-color: 	#a2b4c3;
+  padding: .3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  border: 1px solid #5a758c;
+}
+
+.toolbar i {
+  margin-right: 1rem;
+}

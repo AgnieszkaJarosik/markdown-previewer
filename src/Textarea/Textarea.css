@@ -1,0 +1,18 @@
+.editor-container {
+  min-width: 47%;
+  min-height: 100vh;
+  margin: 3rem 0 0 1rem;
+}
+
+textarea {
+  background-color:#f2f2f2;
+  border: 1px solid #888; 
+  box-sizing: border-box;
+  outline: none;
+  overflow: auto;
+  resize: none;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 1rem 1rem 1rem;
+}
+

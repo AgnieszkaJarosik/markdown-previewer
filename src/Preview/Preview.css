@@ -1,0 +1,60 @@
+.preview-container {
+  min-width: 45%;
+  max-width: 50%;
+  min-height: 100vh;
+  margin: 3rem 1rem 0 1rem;
+}
+
+#preview {
+  background-color: #D6DBDF;
+  min-height: 92vh;
+  border: 1px solid #33414d;
+  padding: 2rem 1rem 1rem 1rem;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2rem;
+  text-decoration: underline #224B4B;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-decoration: underline #224B4B;
+  margin: .7rem 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: .7rem 0;
+}
+
+#preview td, #preview th {
+  border: 2px solid #224B4B;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+
+#preview code {
+  background: #22272b;
+  color: #f2f2f2;
+  padding: 1px 4px 2px 4px;
+  font-size: .8rem;
+  font-weight: bold;
+  display: block;
+}
+
+#preview blockquote {
+  border-left: 3px solid #224B4B;
+  color: #224B4B;
+  padding-left: 1rem;
+  margin-left: 4rem;
+}
